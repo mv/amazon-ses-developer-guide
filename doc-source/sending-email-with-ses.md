@@ -14,7 +14,9 @@ This topic describes what happens when you send an email with Amazon SES, and th
 
    1. The ISP successfully delivers the message to the recipient's inbox\.
 
-   1. The recipient's email address does not exist, so the ISP sends a bounce notification to Amazon SES\. Amazon SES then forwards the notification to the sender\.
+   1. The recipient's email address does not exist, so the ISP sends a bounce notification to Amazon SES\. 
+   
+   1. Amazon SES then forwards the notification to the sender\.
 
    1. The recipient receives the message but considers it to be spam and registers a complaint with the ISP\. The ISP, which has a feedback loop set up with Amazon SES, sends the complaint to Amazon SES, which then forwards it to the sender\.
 
